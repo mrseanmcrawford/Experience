@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--Heading-->
+<heading> 
+    <title>
+        Seattle
+    </title>
+    <script src="./JS/one_page_website.js" defer></script>
+    <link rel="stylesheet" href="./css/onepage.css">
+    <meta charset="utf-8">
+
+</heading>
+<!--End of Heading-->
+
+<!--Body-->
+<body>
+    <!--Fade in and out effect-->
+    <script>
+        document.body.classList.add('fade-out');
+ </script>
+ <!--End of Fade in and out effect-->
+    <h1 id="H!">
+        <b> DO YOU WANT TO MOVE TO SEATTLE</b>
+    </h1>
+
+<!--Nav-->
+<div>
+    <nav>
+        <a href="#Home" id link="link"><li>Home</li></a>
+        <a href="#Gallery" id link="link"><li>Gallery</li></a>
+        <a href="#VOS" id link="link"><li>Video of Seattle</li></a>
+        <a href="#Contact" id link="link"><li>Contact Information</li></a>
+    </nav>
+</div>
+<!--End of Nav-->
+
+<main>
+<p  id="#Home" style="font-size:1vw;">
+    <b>Seattle is such a wonderful and beautiful city!</b>
+    <br>So many people are moving here because of that! 
+    <br>Take a look around and see if you find anything of interest that may make you want to move here too!
+</p>
+</main>
+
+<!--Gallery-->
+
+<!--Images used to open the light box-->
+<div class="table">
+    <div class="row">
+    <div class="column">
+        <img src="images/Seattle1.jpeg" onclick="openModal();currentSlide(1)" class="hover-
+            shadow">
+    </div>
+    <div class="column">
+        <img src="images/Seattle2.jpeg" onclick="openModal();currentSlide(2)" class="hover-
+            shadow">
+    </div>
+    <div class="column">
+        <img src="images/Seattle3.jpeg" onclick="openModal();currentSlide(3)" class="hover-
+            shadow">
+    </div>
+</div>
+
+<!--The Modal/Lightbox-->
+<div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+
+        <div class="mySlides">
+            <div class="numbertext"> 1 / 3</div>
+            <img src="images/Seattle1.jpeg" style="width:100%">
+        </div>
+        
+        <div class="mySlides">
+            <div class="numbertext">2 / 3</div>
+            <img src="images/Seattle2.jpeg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">3 / 3</div>
+            <img src="images/Seattle3.jpeg" style="width:100%">
+        </div>
+
+
+<!--Next/Previous controls-->
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+<!--Caption text-->
+<div class="caption-container">
+    <p id="caption"></p>
+</div>
+
+<!--Thumnail image controls-->
+<div class="column">
+    <img class="demo" src="images/Seattle1.jpeg" onclick="currentSlide(1)" alt="Seattle">
+</div>
+<div class="column">
+    <img class="demo" src="images/Seattle2.jpeg" onclick="currentSlide(2)" alt="Seattle">
+</div>
+<div class="column">
+    <img class="demo" src="images/Seattle3.jpeg" onclick="currentSlide(3)" alt="Seattle">
+        </div>
+    </div>
+</div>
+</div>
+
+<!--End of Gallery-->
+
+<!--Video-->
+<div id="VOS"></div>
+<section>
+    <b><h1>Video of Seattle</h1></b>
+    <p>Here you can see what the Seattle area looks like!</p>
+</section>
+<sectiomn>
+    <div>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/d6qIgmUsUO0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</sectiomn>
+<!--End of Video-->
+
+<!--Contact-->
+<form name="myForm" action="" onsubmit="return validateForm()"
+        method="post">
+            Name: <input type="text" name="fname">
+            <br>
+            Email: <input type="text" name="fname">
+            <br>
+            Phone: <input type="text" name="fname">
+            <br>
+        <input type="submit" value="Submit">
+    </form>
+<!--End of Contact-->
+<script>
+window.addEventListener('DOMContentLoaded', () => {
+    document.body.classList.remove('fade-out');
+});
+</script>
+<!--End of Body-->
+
+<!--Footer-->
+<!--End of Footer-->
+</body>
+</html>
