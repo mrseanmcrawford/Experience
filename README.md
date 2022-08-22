@@ -1,4 +1,5 @@
 # Experience
+
 This Portfolio contains a small sample of my coding projects! 
 
 
@@ -13,6 +14,8 @@ Portfolio Site - My personal Portfolio Website
 Calculator - An app that allows you to calculate numbers - using Javascript!
 
 Cinema Website - A webiste for a movie theater using Boostrap 4
+
+Tetris Gaame - A tetris game built using Python! 
 
 
 
