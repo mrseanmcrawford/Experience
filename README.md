@@ -17,5 +17,5 @@ Cinema Website - A webiste for a movie theater using Boostrap 4
 
 Tetris Gaame - A tetris game built using Python! 
 
-
+AI Agent - An AI agent made with Python and Streamlit
 
